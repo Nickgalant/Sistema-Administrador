@@ -1,0 +1,141 @@
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+.top {
+    background: linear-gradient(90deg, rgb(23,48,64), rgba(0,0,255,0) 100%),url(/admin-small.png);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    font-style: italic;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+}
+
+.login a {
+    color: #fff;
+}
+
+.login > p {
+    display: flex;
+    flex-direction: column;
+}
+
+.fa-home, .fa-user {
+    font-size: 25px;
+}
+
+.fa-home {
+    border-right: 1px solid #d3d3d3;
+    padding-right: 10px;
+}
+
+.fa-user {
+    padding: 10px;
+}
+
+.main {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(165deg, #173040, #4BB0ED);
+    width: 20%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 3px 0;
+
+}
+
+nav a:hover {
+    border-left: 2px solid #fff;
+}
+
+nav a:nth-child(n + 2) {
+    background: #173040;
+}
+
+.app {
+    color: #265573;
+    background: #F2F2F2;
+    width: 100%;
+    padding: 10px 40px;
+}
+
+.app p {
+    border-bottom: 1px solid #173040;
+    padding: 5px 5px;
+}
+
+.app div {
+    background: #fff;
+    border-radius: 4px;
+    height: 70%;
+}
+
+form {
+    padding: 20px 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.thead {
+    background: #173040;
+    color: #fff;
+}
+
+table {
+    margin-left: 23px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td {
+    border: 1px solid black;
+}
+
+td a {
+    color: #265573;
+}
+
+.edicao {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+    border: none;
+}
+
+.fa-pencil-alt {
+    margin-right: 5px;
+}

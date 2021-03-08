@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administração</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <script src="https://kit.fontawesome.com/04f785d8d1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="top">
+        <h3>Controle de Locais de Trabalho</h3>
+        <div class="login">
+            <a href=""><i class="fas fa-home"></i></a>
+            <a href=""><i class="fas fa-user"></i></a>
+            <p>Usuário<span>Administrador</span></p>
+        </div>
+    </div>
+    <div class="main">
+        <nav>
+            <a href="#" class="nav-top"><i class="fas fa-cog"></i>  Administração</a>
+            <a href="#">Administradores</a>
+            <a href="#">Áreas</a>
+            <a href="#">Locais de Trabalho</a>
+            <a href="#">Habilidades</a>
+            <a href="#">Log</a>
+            <a href="#">Responsáveis</a>
+        </nav>
+        <div class="app">
+            <p class="titulo-app">Locais de Trabalho</p>
+            <div>
+                <form action="">
+                    <div class="coluna coluna1">
+                        <label for="predio">Prédio</label>
+                        <div>
+                            <select style="width: 180px" name="predio" id="predio">
+                                <option value=""></option>
+                                <option value="predio1">Prédio 1</option>
+                                <option value="predio2">Prédio 2</option>
+                                <option value="predio3">Prédio 3</option>
+                                <option value="predio3">Prédio 4</option>
+                                <option value="predio3">Prédio 5</option>
+                                <option value="predio3">Prédio 6</option>
+                                <option value="predio3">Prédio 7</option>
+                                <option value="predio3">Prédio 8</option>
+                            </select>
+                        </div>                        
+                    </div>
+                    <div class="coluna coluna2">
+                        <label for="local">Local de Trabalho</label>
+                        <div>
+                            <input type="text" id="local" name="local">
+                            <input type="button" value="+" onclick="cadLocal(predio.value, local.value)" />
+                        </div>
+                    </div>
+                </form>
+                <table id="tabela" width="400">
+                    <tr>
+                        <td class="thead" width="40%">Prédio</td>
+                        <td class="thead" width="40%">Local de Trabalho</td>
+                        <td class="thead" id="icones" width="20%"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="/script/app.js"></script>
+</body>
+</html>
